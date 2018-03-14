@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="40px"
+    android:paddingRight="40px"
+    tools:context="com.yijia.zhenglei.KjxqActivity">
+
+    <ImageView
+        android:layout_width="34px"
+        android:layout_height="61px"
+        android:layout_marginTop="170px"
+        android:src="@mipmap/back" />
+
+    <com.yijia.myview.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="150px"
+                android:text="生活到极致是素与简"
+                android:textColor="#303030"
+                android:textSize="72px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="68px"
+                android:layout_marginTop="55px"
+                android:background="@drawable/textbianshi"
+                android:gravity="center"
+                android:paddingLeft="10px"
+                android:paddingRight="10px"
+                android:text="80㎡，二室二厅，北欧，成都"
+                android:textColor="#888888"
+                android:textSize="32px" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100px">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/head" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="220px"
+                    android:text="贝克汉姆"
+                    android:textColor="#181818"
+                    android:textSize="52px" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/bg" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100px"
+                android:lineSpacingMultiplier="1.5"
+                android:lineSpacingExtra="12px"
+                android:text="认识陈先生一家是因为之前顾客的推荐。第一次量房一家几口人都去了，虽然闹哄哄却独有一份温馨的感觉。陈先生一家都喜欢简单舒适的空间喜欢质朴的感觉，希望我们能打造出一种非华丽的可以让脑袋放空的家居空间。"
+                android:textColor="#303030"
+                android:textSize="46px" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100px"
+                android:src="@mipmap/kj01" />
+
+            <TextView
+                android:layout_width="160px"
+                android:layout_height="78px"
+                android:layout_marginTop="80px"
+                android:background="@drawable/textbiankuang1"
+                android:gravity="center"
+                android:text="客厅"
+                android:textColor="#303030"
+                android:textSize="42px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100px"
+                android:lineSpacingMultiplier="1.5"
+                android:lineSpacingExtra="12px"
+                android:text="他、她、Family，是对家最好的诠释，当我们子逐渐变老的时候，新生的一代却在逐渐长大，我们会一起经历生命中的每一个时刻，有幸福，有温暖。"
+                android:textColor="#303030"
+                android:textSize="46px" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="【相关好物】"
+                android:textColor="#303030"
+                android:textSize="52px"
+                android:layout_marginTop="150px"/>
+            <RelativeLayout
+                android:layout_marginTop="80px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/kj002"/>
+                <TextView
+                    android:id="@+id/txt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="北欧实木餐桌"
+                    android:textColor="#888888"
+                    android:textSize="38px"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/img"
+                    android:layout_marginTop="40px"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="38px"
+                    android:textColor="#ff6876"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/txt1"
+                    android:layout_marginTop="40px"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </com.yijia.myview.MyScrollView>
+
+</LinearLayout>

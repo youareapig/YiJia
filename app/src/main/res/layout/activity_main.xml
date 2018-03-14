@@ -1,18 +1,128 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.yijia.zhenglei.MainActivity">
-
+    <LinearLayout
+        android:id="@+id/main_Fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" />
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#bfbfbf" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160px"
+        android:orientation="horizontal">
 
-</android.support.constraint.ConstraintLayout>
+        <RelativeLayout
+            android:id="@+id/kongjian"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/kongjianimg"
+                android:layout_width="68px"
+                android:layout_height="69px"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="21px"
+                android:src="@mipmap/kongjian" />
+
+            <TextView
+                android:id="@+id/kongjiantext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="17px"
+                android:text="空间"
+                android:textColor="@color/t1"
+                android:textSize="42px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/sheji"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/shejiimg"
+                android:layout_width="75px"
+                android:layout_height="68px"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="21px"
+                android:src="@mipmap/sheji1" />
+
+            <TextView
+                android:id="@+id/shejitext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="17px"
+                android:text="设计"
+                android:textColor="@color/t2"
+                android:textSize="42px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/wuban"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/wubanimg"
+                android:layout_width="76px"
+                android:layout_height="69px"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="21px"
+                android:src="@mipmap/wuban1"/>
+
+            <TextView
+                android:id="@+id/wubantext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="17px"
+                android:text="物伴"
+                android:textColor="@color/t2"
+                android:textSize="42px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/wode"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/wodeimg"
+                android:layout_width="63px"
+                android:layout_height="64px"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="21px"
+                android:src="@mipmap/wode1" />
+
+            <TextView
+                android:id="@+id/wodetext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="17px"
+                android:text="我的"
+                android:textColor="@color/t2"
+                android:textSize="42px" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
