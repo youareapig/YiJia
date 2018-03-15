@@ -15,13 +15,27 @@
             android:focusableInTouchMode="true"
             android:orientation="vertical">
 
-            <TextView
-                style="@style/titlestyle"
-                android:layout_width="wrap_content"
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40px"
-                android:layout_marginTop="170px"
-                android:text="师于生活" />
+                android:layout_marginRight="40px"
+                android:layout_marginTop="170px">
+
+                <TextView
+                    style="@style/titlestyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="师于生活" />
+                <ImageView
+                    android:id="@+id/add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/add"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+            </com.zhy.autolayout.AutoRelativeLayout>
+
 
             <com.zhy.autolayout.AutoLinearLayout
                 android:layout_width="match_parent"
@@ -29,7 +43,6 @@
                 android:layout_marginLeft="40px"
                 android:layout_marginTop="110px"
                 android:orientation="horizontal">
-
                 <TextView
                     android:layout_width="190px"
                     android:layout_height="110px"

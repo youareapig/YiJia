@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yijia.zhenglei.DesignerActivity">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="34px"
+        android:layout_height="61px"
+        android:layout_marginTop="170px"
+        android:layout_marginLeft="40px"
+        android:src="@mipmap/back" />
+
+    <RelativeLayout
+        android:layout_marginLeft="40px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150px">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/head" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="220px"
+            android:text="贝克汉姆"
+            android:textColor="#181818"
+            android:textSize="52px" />
+    </RelativeLayout>
+
+    <com.androidkun.xtablayout.XTabLayout
+        android:id="@+id/xtab"
+        android:layout_width="match_parent"
+        android:layout_height="160px"
+        android:layout_marginTop="200px"
+        app:xTabDisplayNum="3"
+        app:xTabDividerWidthWidthText="true"
+        app:xTabIndicatorColor="@color/t2"
+        app:xTabIndicatorHeight="4px"
+        app:xTabIndicatorWidth="90px"
+        app:xTabMode="scrollable"
+        app:xTabSelectedTextColor="@color/t2"
+        app:xTabTextColor="#181818"
+        app:xTabTextSize="50px" />
+
+    <android.support.v4.view.ViewPager
+        android:layout_marginTop="100px"
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

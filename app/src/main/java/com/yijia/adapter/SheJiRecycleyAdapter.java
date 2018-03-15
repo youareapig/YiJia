@@ -15,6 +15,7 @@ import android.widget.TextView;
 import com.yijia.data.ShejiBean;
 import com.yijia.myview.ImagePagerActivity;
 import com.yijia.utils.SpacesItemDecoration1;
+import com.yijia.zhenglei.DesignerActivity;
 import com.yijia.zhenglei.R;
 import com.zhy.autolayout.utils.AutoUtils;
 
@@ -28,6 +29,7 @@ import java.util.List;
 public class SheJiRecycleyAdapter extends RecyclerView.Adapter {
     private Activity activity;
     private List<ShejiBean> list;
+
     public SheJiRecycleyAdapter(Activity activity, List<ShejiBean> list) {
         this.activity = activity;
         this.list = list;
@@ -55,6 +57,13 @@ public class SheJiRecycleyAdapter extends RecyclerView.Adapter {
         viewHolder.shejiList.setLayoutManager(linearLayoutManager);
         viewHolder.shejiList.addItemDecoration(new SpacesItemDecoration1(1));
         viewHolder.shejiList.setAdapter(new SheJiListAdapter(activity, bean.getList()));
+        viewHolder.shejiHead.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(), DesignerActivity.class);
+                v.getContext().startActivity(intent);
+            }
+        });
 
 
     }
