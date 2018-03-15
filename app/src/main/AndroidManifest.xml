@@ -25,6 +25,7 @@
             android:value="1920" />
 
         <activity android:name=".KjxqActivity"></activity>
+        <activity android:name="com.yijia.myview.ImagePagerActivity"/>
     </application>
 
 </manifest>

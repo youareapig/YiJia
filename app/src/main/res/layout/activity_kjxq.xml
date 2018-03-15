@@ -10,6 +10,7 @@
     tools:context="com.yijia.zhenglei.KjxqActivity">
 
     <ImageView
+        android:id="@+id/back"
         android:layout_width="34px"
         android:layout_height="61px"
         android:layout_marginTop="170px"
